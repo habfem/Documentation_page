@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<title> Build a Documentation Page</title>
+
+<nav id = "navbar">
+  <header> HTML Documentation</header>
+  <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+  
+    <li>
+      <a class="nav-link" href="#Structure"
+        >Structure</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Heading">Headings and Paragraphs</a>
+    </li>
+    <li><a class="nav-link" href="#Multimedia"> Multimedia </a></li>
+    <li><a class="nav-link" href="#Hyperlink">Hyperlinks</a></li>
+    <li>
+      <a class="nav-link" href="#List">Tables and Lists</a>
+    </li>
+   <li>
+      <a></a>
+    </li>
+   
+</nav>
+<main id ="main-doc">
+<section class"main-section" id ="Introduction">
+  <strong><header>Introduction</header></strong>
+  <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. The building blocks of HTML pages are HTML elements represented by tags. An HTML element syntax generally begin with a start tag, content following, and close with an end tag. Elements may have attributes specified in the start tag that provide additional information about an element.</p>
+ 
+  <strong><h3>Element:</h3></strong>
+		<p><code class = "tim">&lt;tagname&gt; content &lt;/tagname&gt;</code></p>	
+  <strong><h3>Element with attributes:</h3></strong>
+		<p><code class = "tim">&lt;tagname attributename=”value”&gt; content &lt;/tagname&gt;</code></p>	
+</section>
+  <section class"main-section" id ="Structure">
+    <hr>
+    <strong><header>Page Structure</header></strong>
+    <p><code class = "slim">&lt;!DOCTYPE html&gt;</code></p>
+			<p><code class = "slim">&lt;html&gt;</code></p>
+			<p><code class = "slim">&lt;head&gt;</code></p>
+				<p><code class = "slim">&lt;title&gt;Page Title&lt;/title&gt;</code></p>
+			<p><code class = "slim">&lt;/head&gt;</code></p>
+			<p><code class = "slim">&lt;body&gt;</code></p>
+				<p><code class = "slim">&lt;h1&gt;My First Heading&lt;/h1&gt;</code></p>
+          <p><code class = "slim">&lt;p&gt;My First Paragraph&lt;/p&gt;</code></p>
+			<p><code class = "slim">&lt;/body&gt;</code></p>
+			<p><code class = "slim">&lt;/html&gt;</code></p>
+    <p>
+    <li> The <code class = "up">&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
+    <li> The <code class = "up">&lt;html&gt;</code> element is the root element of an HTML page</li>
+    <li> The <code class = "up">&lt;head&gt;</code> element contains meta information about the HTML page</li>
+    <li> The <code class = "up">&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) </li>
+    <li> The <code class = "up">&lt;body&gt;</code> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, etc.</li>
+    <li>The <code class = "up">&lt;h1&gt;</code> element defines a large heading</li>
+    <li>The <code class = "up">&lt;p&gt;</code> element defines a paragraph</li>
+    </p>
+  </section>
+  
+  <hr>
+  <section class"main-section" id ="Heading"><strong><header>Headings and Paragrahs</header></strong>
+    <h3>Headings</h3>
+		<p>Headings help to define a documents structure and make it easier to read. 
+		They are used by search engines to catalog the structure and content of a web page. 
+		Heading tags run from the most important <code>&lt;h1&gt;</code> to the least <code>&lt;h6&gt;</code> and include a start and end tag.</p>
+		<h3>Heading Examples:</h3>
+		<ul>
+			<li><code class ="hip">&lt;h1&gt;Heading 1&lt;/h1&gt;</code></li>
+			<li><code class ="hip">&lt;h2&gt;Heading 2&lt;/h2&gt;</code></li>
+			<li><code class ="hip">&lt;h3&gt;Heading 3&lt;/h3&gt;</code></li>
+			<li><code class ="hip">&lt;h4&gt;Heading 4&lt;/h4&gt;</code></li>
+			<li><code class ="hip">&lt;h5&gt;Heading 5&lt;/h5&gt;</code></li>
+			<li><code class ="hip">&lt;h6&gt;Heading 6&lt;/h6&gt;</code></li>
+		</ul>
+    
+		<h2>Paragraphs</h2>
+		<p>The element that defines a paragraph in HTML is the <code>&lt;p&gt;</code> element. 
+		The display of a paragraph can be unpredictable. Adding extra spaces will not changes the results displayed, 
+		the browser removes any extra spaces or lines. In order to preserve spaces and lines, the <code>&lt;pre&gt;</code> element is used.</p>
+		<h3>Paragraph Example:</h3>
+		<ul>
+			<li>Code:</li>
+		<div>	
+		<p><code class ="hip">&lt;p&gt;This is an example paragraph.</code></p>	
+		<p><code class ="hip">An example paragraph is this.</code></p>
+		<p><code class ="hip">A paragraph as an example.&lt;/p&gt;</code></p>
+		</div>
+			<li>Display:</li>
+		<div>
+		<p>This is an example paragraph. An example paragraph is this.
+			A paragraph as an example.</p>
+		</div>
+		</ul>
+		<h3>Preserve Paragraph Example:</h3>
+		<ul>
+			<li>Code:</li>
+		<div>
+		<p><code class ="hip">&lt;pre&gt;This is a preserved example paragraph.</code></p>
+		<p><code class ="hip">A preserved paragraph example.</code></p>
+		<p><code class ="hip">Paragraph with spaces and lines preserved.&lt;/pre&gt;</code></p>
+		</div>
+			<li>Display:</li>
+		<div class ="hip">
+		<pre>This is a preserved example paragraph.
+A preserved paragraph example.
+Paragraph with spaces and lines preserved.</pre>
+		</div>
+		</ul>
+  </section>
+  
+  <hr>
+  <section class"main-section" id ="Multimedia">
+    <strong><header>Multimedia</header></header></strong>
+    <p>Multimedia on the web is sound, music, videos, movies, and animations. Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more. Web pages often contain multimedia elements of different types and formats. Multimedia elements (like audio or video) are stored in media files. The most common way to discover the type of a file, is to look at the file extension. Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.</p>
+  <h3>HTML video</h3>
+  <p> The HTML <code class ="up">&lt;video&gt;</code> element is used to show a video on a web page.
+  <h3>Example:</h3>
+  <p><code class ="hip">&lt;video width="320" height="240" controls&gt;</code></p>
+  <p><code class ="hip">&lt;source src="movie.mp4" type="video/mp4"&gt;</code></p>
+  <p><code class ="hip">&lt;source src="movie.ogg" type="video/ogg"&gt;</code></p>
+Your browser does not support the video tag.
+   <code class ="hip"> &lt;/video&gt;</code></p>
+
+
+<h3>HTML audio</h3>
+  <p> The HTML <code class ="up">&lt;audio&gt;</code> element is used to show a audio on a web page.
+  <h3>Example:</h3>
+  <p><code class ="hip">&lt;audio width="320" height="240" controls&gt;</code></p>
+  <p><code class ="hip">&lt;source src="horse.mp3" type="audio/mp3"&gt;</code></p>
+  <p><code class ="hip">&lt;source src="audio.ogg" type="audio/ogg"&gt;</code></p>
+Your browser does not support the audio tag.
+   <code class ="hip"> &lt;/audio&gt;</code></p>
+  </section>
+
+<hr>
+
+<section class"main-section" id = "Hyperlink"><strong><header>Hyperlinks</header></strong>
+  <p>A HTML link, or hyperlinks, can be clicked on to move to another document. It can link to another HTML element or image. 
+		The <code class = "hip">&lt;a&gt;</code> tag defines a link with the href attribute specifies the destination address for the link. 
+		For example, <code class = "hip">&lt;a href=”url”&gt;link&lt;/a&gt;</code>. CSS can be used to change the color behavior of a link.</p>
+		<h3>Link CSS Options:</h3>
+		<ul id="links-list">
+			<li>a:link – used for normal links</li>
+			<li>a:visited – visited links</li>
+			<li>a:hover – the mouse hovers over the link</li>
+			<li>a:active – a link as it is clicked.</li>
+		</ul>
+	<h3>Images</h3>
+		<p>Images can enhance the design of a webpage. HTML defines images with the <code class = "hip">&lt;img&gt;</code> tag, 
+		which is an empty tag and contains attributes only. The src attribute specifies the URL of an image. 
+		The other required attribute is the alt attribute that provides alternate text if an image can’t display. 
+		Optional attributes include the width and height attributes used to specify their respective categories. 
+		Images can also be used as links.</p>
+		<h3>Normal Image:</h3>
+		<code class = "hip">&lt;img src =”url” alt=”alt text”&gt;</code>
+		<h3>Image Link:</h3>
+		<code class = "hip">&lt;a href=”url1”&gt;&lt;img src=”url2” alt=”alt text”&gt;&lt;/a&gt;</code>
+	</section>
+	
+<hr>
+	
+
+   <section class"main-section" id = "List">
+     <strong><header>Lists</header></strong>
+     <p>HTML provides the option to create ordered or unordered lists. </p>
+		<h3>Unordered lists</h3>
+		<ul>
+			<li>Unordered lists start and end with the <code class = "hip">&lt;ul&gt;</code> tag.</li>
+			<li>Each list item starts and ends with the <code class = "hip">&lt;li&gt;</code> tag.</li>
+			<li>Items by default will be marked with bullets or discs. 
+			Use list-style-type to define the style of the list item markers, such as circles or no markers. </li>
+			<h3>Example:<h3>
+			<div>
+			<p><code class = "hip">&lt;ul style=”list-style-type:square;”&gt;</p>
+			<p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+			<p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+			<p>&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</p></code>
+			</div>
+		</ul>
+		<h3>Ordered lists</h3>
+		<ul>
+			<li>Ordered lists start and end with the <code class = "hip">&lt;ol&gt;</code> tag.</li>
+			<li>Each list item starts and ends with the <code class = "hip">&lt;li&gt;</code> tag.</li>
+			<li>Items by default with be marked with numbers. 
+			Use the type attribute to define the type of list item marker, such as letters or roman numerals.</li>
+      <h3>Example:</h3>
+			<div class="lists-ex">
+			<p><code class = "hip">&lt;ol type=”A”&gt;</p>
+			<p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+			<p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+			<p>&lt;li&gt;Item 3&lt;/li&gt;&lt;/ol&gt;</code></p>
+			</div>
+		</ul>
+  
+<strong><header>Tables</header></strong>
+  <p>A table, or structure for creating rows and columns on page, in HTML is defined by the <code class ="hip">&lt;table&gt;</code> tag. 
+		The <code class ="hip">&lt;tr&gt;</code> tag defines table rows, the <code class ="hip">&lt;th&gt;</code> tag defines table headers,
+		and the <code class ="hip">&lt;td&gt;</code> tag defines table data/cells. In order for them to stand out, 
+		table headings are bold and centered by default. The colspan attribute can be added to make a cell span more than one column. 
+		The rowspan attribute will make a cell span more than one row. The <code class ="hip">&lt;caption&gt;</code> tag adds a caption to the table.</p>
+		<h3>Example:</h3>
+		<div id="table-ex">
+			<p><code class ="hip">&lt;table&gt;</p>
+			<p>&lt;caption&gt;Table caption&lt;/caption&gt;</p>
+			<p>&lt;tr&gt;</p>
+			<p>&lt;th&gt;First heading&lt;/th&gt;</p>
+			<p>&lt;th colspan=”2”&gt;Second heading&lt;/th&gt;</p>
+			<p>&lt;/tr&gt;</p>
+			<p>&lt;tr&gt;</p>
+			<p>&lt;td&gt;Cell 1&lt;/td&gt;</p>
+			<p>&lt;td&gt;Cell 2&lt;/td&gt;</p>
+			<p>&lt;td&gt;Cell 3&lt;/td&gt;</p>
+			<p>&lt;/tr&gt;</p>
+			<p>&lt;/table&gt;</code></p>
+		</div>
+		<p>CSS can be used to set table properties.</p>
+		<ul>
+			<li>Border and border-collapse properties set table borders.</li>
+			<li>The padding property sets table cell padding.</li>
+			<li>Use text-align to align the text in headings or cells.</li>
+			<li>Border-spacing can be used to set the spacing of the table border.</li>
+		</ul>
+   </section>
+   
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
